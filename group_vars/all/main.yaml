@@ -1,0 +1,22 @@
+# ansible_user: ec2-user
+# ansible_password: DevOps321
+# ansible_user: "{{ vault_ansible_user }}"
+# ansible_password: "{{ vault_ansible_password }}"
+# mysql_root_password: "{{ vault_mysql_root_password }}"
+# mysql_root_password: "{{ lookup('amazon.aws.aws_secret', 'roboshop/dev/ansible', region='us-east-1') | from_json | json_query('mysql_root_password')  }}"
+# rabbitmq_user: "{{ vault_rabbitmq_user }}"
+# rabbitmq_password: "{{ vault_rabbitmq_password }}"
+# shipping_db_user: "{{ vault_shipping_db_user }}"
+# shipping_db_password: "{{ vault_shipping_db_password }}"
+
+mongodb_host: mongodb.ksrdaws92s.store
+redis_host: redis.ksrdaws92s.store
+mysql_host: mysql.ksrdaws92s.store
+rabbitmq_host: rabbitmq.ksrdaws92s.store
+catalogue_host: catalogue.ksrdaws92s.store
+user_host: user.ksrdaws92s.store
+cart_host: cart.ksrdaws92s.store
+shipping_host: shipping.ksrdaws92s.store
+payment_host: payment.ksrdaws92s.store
+
+
