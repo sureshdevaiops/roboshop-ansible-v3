@@ -17,7 +17,7 @@
     name:
       - boto3
       - botocore
-    status: present
+    state: present
     executable: pip3.9
 
 - name: setup mysql root password
